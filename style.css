@@ -2,7 +2,7 @@
     --color-accent: rgb(230,170,40);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,7 +18,8 @@ img {
     object-fit: cover;
 }
 
-a,p {
+a,
+p {
     color: var(--color-accent);
     text-decoration: none;
     font-family: "Basis Grotesque Pro";
@@ -49,12 +50,12 @@ nav > div {
     flex: 1;
 }
 
-.link {
+.links-1 {
     display: flex;
     gap: 2em;
 }
 
-.link2 {
+.links-2 {
     display: flex;
     gap: 2em;
     justify-content: flex-end;
@@ -81,7 +82,7 @@ nav > div {
     height: 100%;
 }
 
-.activity {
+.active-slide {
     position: fixed;
     top: 0;
     left: 0;
@@ -93,5 +94,134 @@ nav > div {
     z-index: -1;
 }
 
+.active-slide img {
+    position: absolute;
+    filter: blur(50px);
+    transform: scale(1.125);
+}
+
+.slider {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transform-style: preserve-3d;
+    perspective: 750px;
+    overflow: hidden;
+}
+
+.slide { 
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slide-copy p {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "PP Monument Extended Regular";
+    font-size: 13px;
+    font-weight: bolder;
+    line-height: 150%;
+    color: var(--color-accent);
+}
+
+@font-face {
+    font-family: 'Basic Grotesc Regular';
+    src: url('./Fonts/BasisGrotesquePro-Regular.ttf'); 
+}
+
+.slide-copy 
+p#index {
+    font-family: "Basic Grotesc Regular";
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 0.75em;
+}
+
+#slide-1 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-22500px);
+    opacity: 0;
+}
 
 
+#slide-2 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-20000px);
+    opacity: 0;
+}
+
+#slide-3 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-17500px);
+    opacity: 0;
+}
+
+
+#slide-4 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-15000px);
+    opacity: 0;
+}
+
+
+#slide-5 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-12500px);
+    opacity: 0;
+}
+
+
+#slide-6 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-10000px);
+    opacity: 0;
+}
+
+
+#slide-7 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-7500px);
+    opacity: 0;
+}
+
+#slide-8 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-5000px);
+    opacity: 0;
+}
+
+#slide-9 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-2500px);
+    opacity: 0.5;
+}
+
+
+#slide-10 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(0px);
+    opacity: 1;
+}
